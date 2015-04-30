@@ -68,6 +68,7 @@ variable "api_ssl_certificate_id" {
   default = "arn:aws:iam::988997429095:server-certificate/wildcard_tsuru_paas_alphagov" 
 }
 
+<<<<<<< HEAD
 variable "dns_zone_id_internal" {
   description = "Amazon Route53 DNS zone identifier (internal)"
   default = "Z3OIOPK20MYIOI"
@@ -81,4 +82,14 @@ variable "dns_zone_id_external" {
 variable "dns_zone_name" {
   description = "Amazon Route53 DNS zone name"
   default     = "tsuru.paas.alphagov.co.uk"
+=======
+variable "registry_s3_bucketname" {
+  description = "S3 Object Storage name for the registry"
+  default = "mcp.registry.storage"  
+>>>>>>> Added creation of s3 bucket to be used with the registry component
+}
+
+variable "registry_s3_bucketname" {
+  description = "S3 Object Storage name for the registry"
+  default = "mcp.registry.storage"  
 }
